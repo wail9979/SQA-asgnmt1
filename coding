@@ -1,0 +1,7 @@
+total_cost = 0
+
+num_items = int(input("Enter the number of items in your order: "))
+
+
+
+print("Your total cost is: ${:.2f}".format(total_cost))
