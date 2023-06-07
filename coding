@@ -3,5 +3,14 @@ total_cost = 0
 num_items = int(input("Enter the number of items in your order: "))
 
 
+for i in range(num_items):
+    item_price = float(input("Enter the price of item {}: ".format(i+1)))
+    total_cost += item_price
+
+if total_cost &gt; 50:
+    total_cost *= 0.9  # apply 10% discount if total cost is above $50
+
+
+
 
 print("Your total cost is: ${:.2f}".format(total_cost))
